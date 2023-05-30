@@ -49,7 +49,7 @@ const StartScreen = () => {
                     <Text style={styles.text2}>To Unlock all features</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.btn2}>
+                <TouchableOpacity style={styles.btn2} onPress={() => navigation.navigate('Bottom')}>
                     <Text style={styles.text1}>Start Free Trial</Text>
                     <Text style={styles.text2}>Start try Free trial 14 days.</Text>
                 </TouchableOpacity>

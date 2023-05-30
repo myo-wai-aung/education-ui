@@ -8,9 +8,9 @@ import Signin from "./src/screens/auth/Signin";
 import ForgotPassword from "./src/screens/auth/ForgotPassword";
 import ResetPassword from "./src/screens/auth/ResetPassword";
 import StartScreen from "./src/screens/Home/StartScreen";
+import BottomNavigator from "./src/components/BottomNav";
 
 import { NavigationContainer } from "@react-navigation/native";
-
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 const Stack = createNativeStackNavigator();
@@ -37,6 +37,7 @@ const App = () => {
           <Stack.Screen name = "ForgotPassword" component={ForgotPassword} options={{headerShown: true}}/>
           <Stack.Screen name = "ResetPassword" component={ResetPassword} options={{headerShown: true}}/>
           <Stack.Screen name = "StartScreen" component={StartScreen}/>
+          <Stack.Screen name = "Bottom" component={BottomNavigator}/>
       </Stack.Navigator>
     </NavigationContainer>
   )

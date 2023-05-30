@@ -1,15 +1,16 @@
 import React from "react";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import MyClass from "../screens/MyClass";
-import Addons from "../screens/Addons";
-import Explore from "../screens/Explore";
-import Profile from "../screens/Profile";
+import Profile from "../screens/Bottom/Profile";
+import Explore from "../screens/Bottom/Explore";
+import MyClass from "../screens/Bottom/MyClass";
+import Addons from "../screens/Bottom/Addons";
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 
 const Tab = createBottomTabNavigator();
 
 const BottomNavigator = () => {
+    
     return(
         <Tab.Navigator
             screenOptions={{
@@ -24,7 +25,7 @@ const BottomNavigator = () => {
                 component={MyClass}
                 options={{
                     tabBarIcon: ({ color, size }) => (
-                        <MaterialCommunityIcons name="home" color={color} size={size} />
+                        <MaterialCommunityIcons name="zodiac-sagittarius" color={color} size={size} />
                       ),
                 }}
             />
@@ -33,7 +34,7 @@ const BottomNavigator = () => {
                 component={Addons}
                 options={{
                     tabBarIcon: ({color, size}) => (
-                        <MaterialCommunityIcons name="google" color={color} size={size} />
+                        <MaterialCommunityIcons name="rocket" color={color} size={size} />
                     ),
                 }}
             />
@@ -42,7 +43,7 @@ const BottomNavigator = () => {
                 component={Explore}
                 options={{
                     tabBarIcon: ({color, size}) => (
-                        <MaterialCommunityIcons name="explore" color={color} size={size} />
+                        <MaterialCommunityIcons name="compass-outline" color={color} size={size} />
                     ),
                 }}
             />
@@ -51,7 +52,7 @@ const BottomNavigator = () => {
                 component={Profile}
                 options={{
                     tabBarIcon: ({color, size}) => (
-                        <MaterialCommunityIcons name="profile" color={color} size={size} />
+                        <MaterialCommunityIcons name="rocket" color={color} size={size} />
                     ),
                 }}
             />
