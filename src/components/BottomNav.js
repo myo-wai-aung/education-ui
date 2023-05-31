@@ -17,6 +17,13 @@ const BottomNavigator = () => {
                 tabBarStyle: {
                      position: 'absolute',
                  },
+                 headerStyle: {
+                    backgroundColor: "#187BCD",
+                  },
+                  headerTintColor: "#fff",
+                  headerTitleStyle: {
+                    fontWeight: "bold",
+                  },
 
             }}
         >
@@ -24,36 +31,37 @@ const BottomNavigator = () => {
                 name="MyClass"
                 component={MyClass}
                 options={{
-                    tabBarIcon: ({ color, size }) => (
-                        <MaterialCommunityIcons name="zodiac-sagittarius" color={color} size={size} />
-                      ),
+                    // tabBarIcon: ({ color, size }) => (
+                    //     <MaterialCommunityIcons name="zodiac-sagittarius" color={color} size={size} />
+                    //   ),
                 }}
             />
             <Tab.Screen
                 name="Addons"
                 component={Addons}
                 options={{
-                    tabBarIcon: ({color, size}) => (
-                        <MaterialCommunityIcons name="rocket" color={color} size={size} />
-                    ),
+                    // tabBarIcon: ({color, size}) => (
+                    //     <MaterialCommunityIcons name="rocket" color={color} size={size} />
+                    // ),
                 }}
             />
             <Tab.Screen
                 name="Explores"
                 component={Explore}
                 options={{
-                    tabBarIcon: ({color, size}) => (
-                        <MaterialCommunityIcons name="compass-outline" color={color} size={size} />
-                    ),
+                    // tabBarIcon: ({color, size}) => (
+                    //     <MaterialCommunityIcons name="compass-outline" color={color} size={size} />
+                    // ),
                 }}
             />
             <Tab.Screen 
                 name="Profile"  
                 component={Profile}
                 options={{
-                    tabBarIcon: ({color, size}) => (
-                        <MaterialCommunityIcons name="rocket" color={color} size={size} />
-                    ),
+                    // tabBarIcon: ({color, size}) => (
+                    //     <MaterialCommunityIcons name="rocket" color={color} size={size} />
+                    // ),
+                    
                 }}
             />
         </Tab.Navigator>
